@@ -6,12 +6,15 @@ import java.util.Scanner;
 
 //1316
 //+ 10828, 10773
+//+ 1966, 2108
 public class GroupWordChecker {
     public static void main(String[] args) {
         //뒤의 알파벳과 현재 알파벳이 다를 때
         //다음 알파벳이 단어에 없으면 됨
-        //어덯게...?
-        //--> 배열 순회로 확인!
+        //어떻게...?
+        //--> 리스트 순회로 확인!
+        //리스트를 쓰지 않고 했더니 'aa'와 같은 연속된 알파벳은 판별이 안됨
+        //리스트에 이미 나온 알파벳을 넣자!
 
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt(); //입력 단어 개수
@@ -23,7 +26,6 @@ public class GroupWordChecker {
                 group++;
             }
         }
-
         System.out.println(group);
     }
 
