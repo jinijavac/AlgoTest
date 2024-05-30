@@ -13,7 +13,7 @@ public class PrinterQueue {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int n = Integer.parseInt(br.readLine()); // 테스트 케이스의 수
+        int n = Integer.parseInt(br.readLine()); // 테스트 케이스 개수
 
         for (int i = 0; i < n; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
@@ -25,19 +25,19 @@ public class PrinterQueue {
             PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(Collections.reverseOrder());
 
             for (int a = 0; a < count; a++) {
-                int prior = Integer.parseInt(str.nextToken());
-                q.add(new int[]{a, prior}); // 문서를 큐에 추가
-                priorityQueue.add(prior);
+                int prior = Integer.parseInt(str.nextToken()); //중요도
+                q.add(new int[]{a, prior}); // 문서 위치, 중요도 추가
+                priorityQueue.add(prior); //우선순위 큐에 중요도 추가
             }
 
-            int printOrder = 0;
+            int printOrder = 0; //출력 순서 변수
 
             while (!q.isEmpty()) {
                 int[] cur = q.poll();
                 int index = cur[0];
                 int priority = cur[1];
 
-                if (priority == priorityQueue.peek()) {
+                if (priority == priorityQueue.peek()) { //현재 중요도와 우선순위 큐의 최상위 중요도가 같다면 출력
                     priorityQueue.poll();
                     printOrder++;
                     if (index == loc) {
