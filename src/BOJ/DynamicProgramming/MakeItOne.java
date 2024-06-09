@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package BOJ.DynamicProgramming;
 
 import java.io.BufferedReader;
@@ -67,3 +68,7 @@ public class MakeItOne {
 // dp[2] + 1 + 1 + 1 = 1 + 1 + 1 + 1 = 4
 
 //*** 2번보다 1번이 횟수가 더 적음 --> 비교 후 횟수 3 채택
+=======
+package BOJ.DynamicProgramming;public class MakeItOne {
+}
+>>>>>>> origin/main
