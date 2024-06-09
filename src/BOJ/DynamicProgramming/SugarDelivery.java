@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package BOJ.DynamicProgramming;
 
 import java.io.BufferedReader;
@@ -47,7 +46,3 @@ public class SugarDelivery {
 // | 8      | 3     | 1          | 1          | 2         |
 // | 9      | 4     | 0          | 3          | 3         |
 // | 10     | 0     | 2          | 0          | 2         |
-=======
-package BOJ.DynamicProgramming;public class SugarDelivery {
-}
->>>>>>> origin/main
