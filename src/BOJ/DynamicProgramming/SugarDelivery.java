@@ -22,7 +22,7 @@ public class SugarDelivery {
         }else if (n % 5 == 1 || n % 5 == 3){
             // 나머지가 1인 경우: n = 5a + 6 (3kg * 2)
             // ex) 6 -> 3kg 2개
-            // 나머지가 3인 경우: n = 5a + 3 (5kg * 1 + 3kg * 1)
+            // 나머지가 3인 경우: n = 5a + 8 (5kg * 1 + 3kg * 1)
             // ex) 8 -> 5kg 1개 3kg 1개
             System.out.println(n/5 +1);
 
